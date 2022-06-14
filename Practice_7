@@ -1,0 +1,18 @@
+//SPDX-License-Identifier:GPL-3.0
+pragma solidity >= 0.5.0 < 0.9.0;
+contract practice_7 {
+
+ function digitSum(int256 n) public pure returns (int256)            // finding sum of digits 
+ {
+     int256 a;
+     int256 sum = 0;
+     while ( n > 0)                                                   // using while loop
+     {
+         a = n % 10;                                                  // modulo concept
+         sum = sum + a;                                               // % - individual digit
+         n = n/10;                                                    // / - updation of digit
+     }
+     return sum;
+ }
+     
+ }    
