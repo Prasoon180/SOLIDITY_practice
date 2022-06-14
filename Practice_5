@@ -1,0 +1,10 @@
+//SPDX-License-Identifier:GPL-3.0
+pragma solidity >= 0.5.0 < 0.9.0;
+contract practice_5 {
+    function find(int256 a) public pure returns (int256)
+    {
+        require (a > 0, " a should not be negative");  // using require (true, false)
+                                                      // by default boolean is false in solidity
+        return a % 3;                                  // using modulo concept ~ remainder
+    }
+    }
